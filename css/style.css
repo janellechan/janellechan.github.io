@@ -11,3 +11,18 @@ body {
   font-size: 12px;
   border: 2px dotted grey;
 }
+
+a {
+  color: rgb(57, 56, 109);
+}
+
+a:visited {
+  color: rgb(57, 56, 109);
+  font-style: italic;
+  text-decoration: none;
+}
+  
+a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
