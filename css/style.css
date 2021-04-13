@@ -3,11 +3,12 @@ body {
 }
 
 .main-container {
-  padding: 100px;
+  padding: 80px;
 }
 
 .content-container {
-  padding: 120px;
+  padding: 30px;
+  overflow: auto;
   font-size: 12px;
   border: 2px dotted grey;
 }
@@ -25,4 +26,63 @@ a:visited {
 a:hover {
   font-style: italic;
   text-decoration: underline;
+}
+
+#panel-container {
+  display: inline-block;
+  font-size: 15px;
+  width: 70vw;
+  min-width: 1000px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  /* background: rgb(112,223,232); */
+}
+
+.panel {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  padding: 0;
+  width: 30%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  /* background: #101d30; */
+  background: radial-gradient(circle, rgba(112,223,232,1) 0%, rgba(51,155,198,1) 11%, rgba(57,108,194,1) 25%, rgba(1,30,71,1) 100%);  background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid rgb(35, 123, 182);
+}
+
+#panel-containers-fill {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(112,223,232,1) 0%, rgba(51,155,198,1) 18%, rgba(57,108,194,1) 56%, rgba(1,30,71,1) 100%);
+}
+
+.panel-content {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  width: 29%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.panel-content-2 {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  width: 29%;
+  height: 100%;
+  top: -20%;
+  min-width: 300px;
+  min-height: 300px;
+  transform: scale(0.8);
 }
