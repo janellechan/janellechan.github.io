@@ -3,13 +3,30 @@ body {
 }
 
 .main-container {
-  padding: 100px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  justify-content: center;
 }
 
 .content-container {
-  padding: 120px;
-  font-size: 12px;
-  border: 2px dotted grey;
+  padding: 20px 50px 20px 30px;
+  position: relative;
+  display: inline-block;
+  flex-wrap: wrap;
+  overflow: auto;
+  font-size: 15px;
+}
+
+.internal-content-container {
+  position: relative;
+  /* display: inline-block; */
+  overflow: auto;
+  width: 85%;
+  font-size: 15px;
+  border: 0 solid transparent;
+  float: right;
 }
 
 a {
@@ -25,4 +42,25 @@ a:visited {
 a:hover {
   font-style: italic;
   text-decoration: underline;
+}
+
+div.three-column-layout {
+  float: right;
+  width: 30%;
+}
+
+div.three-column-layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.foreground-img {
+  display: inline;
+  position: absolute;
+  padding: 0px;
+  width: 30%;
+  max-height: 50vh;
+  left: 0%;
+  bottom: 0%;
 }
